@@ -13,11 +13,11 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="grey darken-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Robert Todar</a>
+  <nav class="green lighten-2" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo truncate">Robert Todar</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="https://github.com/todar">GitHub</a></li>
         <li><a href="https://stackoverflow.com/story/roberttodar">Stack Overflow</a></li>
+        <li><a style="font-size: 2.3rem" href="https://github.com/todar"><i class="fab fa-github"></i></a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -27,13 +27,14 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
+  <div class="section blue-grey" id="index-banner">
     <div class="container">
       <br><br>
       <h1 class="header center green-text text-lighten-2">Modern VBA</h1>
       <div class="row center">
-        <h5 class="header col s12 light">Tools that were developed to help bring VBA to the modern age</h5>
+        <h5 class="header col s12 light white-text">Tools that were developed to help bring VBA to the modern age</h5>
       </div>
+      <br>
       <div class="row center">
         <a href="https://github.com/todar" id="download-button" class="btn-large hoverable waves-effect waves-light green lighten-2">Get Started</a>
       </div>
@@ -42,12 +43,15 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="section">
+  <br><br>
 
-      <!--   Icon Section   -->
+  <!-- Array Section -->
+  <div class="section main-sections">
+    <div class="container">
       <div class="row">
-        <div class="col s12 m4">
+
+        <!-- Article -->
+        <div class="col m12 l4 left">
           <div class="icon-block">
             <a  href="https://github.com/todar/VBA-Arrays">
               <h2 class="center light-blue-text text-lighten-2"><i class="material-icons">font_download</i></h2>
@@ -57,64 +61,96 @@
           </div>
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <a href="https://github.com/todar/VBA-Distribution">
-              <h2 class="center light-blue-text text-lighten-2"><i class="material-icons">group</i></h2>
-              <h5 class="center grey-text text-darken-4">Distribution</h5>
-            </a>  
-            <p class="light">Unfortunately there are not great options for sharing VBA code at a workplace for other users. Fortunately I needed this functionality, and created a way of pushing out updates to users. All you need is a shared drive!</p>
-          </div>
+        <!-- Image -->
+        <div class="col m12 l6 right">
+          <img class="responsive-img" src="/images/array.png" alt="">
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <a href="https://github.com/todar/VBA-Materialize">
-              <h2 class="center light-blue-text text-lighten-2"><i class="material-icons">color_lens</i></h2>
-              <h5 class="center grey-text text-darken-4">Material Design</h5>
-            </a> 
-            <p class="light">Learning web development this last year, I have come to really like the material design (hence this page is designed with materialize). Well I took that design, and have created two class modules that are able to make userforms have a similar look and feel. It also add tools to make validation simple.</p>
-          </div>
-        </div>
       </div>
-
     </div>
-    <br><br>
   </div>
 
-  <footer class="page-footer grey lighten-2  grey-text text-darken-1">
+  <!-- Material Section -->
+  <div class="section main-sections blue-grey lighten-5">
+      <div class="container">
+        <div class="row">
+  
+            <!-- Article -->
+            <div class="col m12 l4 right">
+              <div class="icon-block">
+                <a href="https://github.com/todar/VBA-Materialize">
+                  <h2 class="center light-blue-text text-lighten-2"><i class="material-icons">color_lens</i></h2>
+                  <h5 class="center grey-text text-darken-4">Material Design</h5>
+                </a> 
+                <p class="light">Learning web development this last year, I have come to really like the material design (hence this page is designed with materialize). Well I took that design, and have created two class modules that are able to make userforms have a similar look and feel. It also add tools to make validation simple.</p>
+              </div>
+            </div>
+        
+            <!-- Image -->
+            <div class="col m12 l6 left">
+              <img class="responsive-img" src="/images/material.gif" alt="">
+            </div>
+  
+        </div>
+      </div>
+    </div>
+
+  <!-- Distribution Section -->
+    <div class="section main-sections">
+      <div class="container">
+        <div class="row">
+
+          <!-- Article -->
+          <div class="col m12 l4 left">
+            <div class="icon-block">
+              <a href="https://github.com/todar/VBA-Distribution">
+                <h2 class="center light-blue-text text-lighten-2"><i class="material-icons">group</i></h2>
+                <h5 class="center grey-text text-darken-4">Distribution</h5>
+              </a>  
+              <p class="light">Unfortunately there are not great options for sharing VBA code at a workplace for other users. Fortunately I needed this functionality, and created a way of pushing out updates to users. All you need is a shared drive!</p>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="col m12 l6 right">
+            <img class="responsive-img" src="/images/distribution.jpg" alt="">
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+
+  <footer class="page-footer blue-grey lighten-2">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="grey lighten-2  grey-text text-darken-1">Bio</h5>
-          <p class="grey-text text-darken-2">I love coding and figuring out ways to make everyday tasks easier. <br> VBA has been my primary language as well as some SQL, but last year have been learning web development. I have studied HTML, CSS, ES6 Javascript; as well as popular frameworks: Node.js, Vue.js, and Materialize.css. I've also dabbled in C# and Electron.</p>
+          <h5 class="blue-grey lighten-2">Bio</h5>
+          <p class="">I love coding and figuring out ways to make everyday tasks easier. <br> VBA has been my primary language as well as some SQL, but last year have been learning web development. I have studied HTML, CSS, ES6 Javascript; as well as popular frameworks: Node.js, Vue.js, and Materialize.css. I've also dabbled in C# and Electron.</p>
 
         </div>
         <div class="col l3 s12">
-          <h5 class=" grey lighten-2  grey-text text-darken-1">Repositories</h5>
+          <h5 class="blue-grey lighten-2">Repositories</h5>
           <ul>
-            <li><a class="orange-text" href="https://github.com/todar/VBA-Arrays">Array Object</a></li>
-            <li><a class="orange-text" href="https://github.com/todar/VBA-Distribution">Distribution</a></li>
-            <li><a class="orange-text" href="https://github.com/todar/VBA-Materialize">Material Design</a></li>
-            <li><a class="orange-text" href="https://github.com/todar/VBA-Functions">Function Library</a></li>
+            <li><a class="green-text text-lighten-3" href="https://github.com/todar/VBA-Arrays">Array Object</a></li>
+            <li><a class="green-text text-lighten-3" href="https://github.com/todar/VBA-Distribution">Distribution</a></li>
+            <li><a class="green-text text-lighten-3" href="https://github.com/todar/VBA-Materialize">Material Design</a></li>
+            <li><a class="green-text text-lighten-3" href="https://github.com/todar/VBA-Functions">Function Library</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
-          <h5 class="grey-text text-darken-1">Connect</h5>
+          <h5 class="">Connect</h5>
           
             <a class="black-text" href="https://github.com/todar"><i style="font-size: 2.5rem; margin-right: 10px;" class="fab fa-github"></i></a>
             <a class="orange-text" href="https://stackoverflow.com/story/roberttodar"><i style="font-size: 2.5rem" class="fab fa-stack-overflow"></i></a>
           
-          <!-- <ul>
-            <li><a class="black-text" href="https://github.com/todar"><i style="font-size: 2.5rem" class="fab fa-github"></i></a></li>
-            <li><a class="orange-text" href="https://stackoverflow.com/story/roberttodar"><i style="font-size: 2.5rem" class="fab fa-stack-overflow"></i></a></li>
-          </ul> -->
         </div>
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container grey-text">
-        Designed using <a class="orange-text" href="http://materializecss.com">Materialize</a>
+      <div class="container grey-text text-lighten-1">
+        Designed using <a class="green-text text-lighten-2" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
