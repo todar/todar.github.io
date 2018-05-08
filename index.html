@@ -23,44 +23,62 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   <link rel="manifest" href="/manifest.json">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body>
-  <nav class="green lighten-2" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo truncate">Robert Todar</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="https://stackoverflow.com/story/roberttodar">Stack Overflow</a></li>
-        <li><a style="font-size: 2.3rem" href="https://github.com/todar"><i class="fab fa-github"></i></a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="sidenav">
+<body id="body" class="scrollspy">
+  <div class="navbar-fixed">
+  <nav class="nav-extended white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#body" class="brand-logo truncate grey-text text-darken-1">Todar</a>
+      <a href="#" data-target="nav-mobile" class="blue-text sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down ">
+        <li><a class="grey-text text-darken-1" href="https://stackoverflow.com/story/roberttodar">Stack Overflow</a></li>
+        <li><a class="grey-text text-darken-1" style="font-size: 2.3rem" href="https://github.com/todar"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </div>
+      <div class="nav-content container">
+        <ul class="tabs">
+          <li class="tab"><a class="grey-text text-darken-1" href="#arrays">Arrays</a></li>
+          <li class="tab"><a class="grey-text text-darken-1" href="#material-design">Material Design</a></li>
+          <li class="tab"><a class="grey-text text-darken-1" href="#distribution">Distribution</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <ul id="nav-mobile" class="sidenav">
         <li><a href="https://github.com/todar">GitHub</a></li>
         <li><a href="https://stackoverflow.com/story/roberttodar">Stack Overflow</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
+    </ul>
+      
   </nav>
-  <div class="section blue-grey" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center green-text text-lighten-2">Modern VBA Functions</h1>
-      <div class="row center">
-        <h5 class="header col s12 light white-text">Tools that were developed to help bring VBA to the modern age</h5>
+</div>
+
+
+  <!-- Showcase -->
+  <div class="section" id="index-banner">
+      <div class="container">
+        <div class="row">
+            <div class="col s12 l4 push-l7">
+            <h3 class="header light grey-text text-darken-2">Improve software development using Modern VBA</h3>
+              <div class="row">
+                <p class="header col s12 grey-text text-darken-1 light">These VBA Tools were developed to help bring VBA to the modern age, that allows for rapid development of software. It also allows you to have an ease of use with multiple users working on the same projects.</p>
+                <a href="https://github.com/todar" id="download-button" class="btn-large hoverable waves-effect waves-light green">Get Started</a>
+              </div>
+            </div>
+          
+            <div class="col s12 l6 pull-l4">
+          <img style="width:700px; margin-top: 50px" class="responsive-img" src="images/modern-vba.jpg" alt="modern vba">
+        </div>
       </div>
-      <br>
-      <div class="row center">
-        <a href="https://github.com/todar" id="download-button" class="btn-large hoverable waves-effect waves-light green lighten-2">Get Started</a>
-      </div>
-      <br><br>
 
     </div>
   </div>
 
-  <br><br>
 
   <!-- Array Section -->
-  <div class="section main-sections">
+  <div id="arrays" class="section scrollspy main-sections light-blue">
     <div class="container">
       <div class="row">
 
@@ -68,10 +86,10 @@
         <div class="col m12 l4 left">
           <div class="icon-block">
             <a  href="https://github.com/todar/VBA-Arrays">
-              <h2 class="center light-blue-text text-lighten-2"><i class="material-icons">font_download</i></h2>
-              <h5 class="center grey-text text-darken-4">Array Object</h5>
+              <h2 class="center white-text light"><i class="material-icons">font_download</i></h2>
+              <h5 class="center white-text light">Array Object</h5>
             </a>
-            <p class="light">In VBA, arrays are extremely important for every day tasks, yet there aren't many built in functions that support arrays. The Array Object Class was created to make arrays similiar to other modern day languages such as Javascript. Additionaly, it adds functionality for two dimensional arrays!</p>
+            <p class="white-text light">In VBA, arrays are extremely important for every day tasks, yet there aren't many built in functions that support arrays. The Array Object Class was created to make arrays similiar to other modern day languages such as Javascript. Additionaly, it adds functionality for two dimensional arrays!</p>
           </div>
         </div>
 
@@ -85,7 +103,7 @@
   </div>
 
   <!-- Material Section -->
-  <div class="section main-sections blue-grey lighten-5">
+  <div id="material-design" class="section scrollspy main-sections blue-grey lighten-5">
       <div class="container">
         <div class="row">
   
@@ -110,7 +128,7 @@
     </div>
 
   <!-- Distribution Section -->
-    <div class="section main-sections">
+    <div id="distribution" class="section scrollspy main-sections">
       <div class="container">
         <div class="row">
 
@@ -135,36 +153,35 @@
   </div>
 
   
-
-  <footer class="page-footer blue-grey lighten-2">
+  <footer class="page-footer grey darken-3">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="blue-grey lighten-2">Bio</h5>
-          <p>Robert Todar loves coding and figuring out ways to make everyday tasks easier. VBA has been his primary language as well as some SQL, but last year he has been learning web development. He has studied HTML, CSS, ES6 Javascript; as well as popular frameworks: Node.js, Vue.js, and Materialize.css.</p>
+          <h5 class="grey darken-3">Bio</h5>
+          <p class="light grey-text text-lighten-1">Robert Todar loves coding and figuring out ways to make everyday tasks easier. VBA has been his primary language as well as some SQL, but last year he has been learning web development. He has studied HTML, CSS, ES6 Javascript; as well as popular frameworks: Node.js, Vue.js, and Materialize.css.</p>
 
         </div>
         <div class="col l3 s12">
-          <h5 class="blue-grey lighten-2">Repositories</h5>
+          <h5 class="grey darken-3">Repositories</h5>
           <ul>
-            <li><a class="green-text text-lighten-3" href="https://github.com/todar/VBA-Arrays">Array Object</a></li>
-            <li><a class="green-text text-lighten-3" href="https://github.com/todar/VBA-Distribution">Distribution</a></li>
-            <li><a class="green-text text-lighten-3" href="https://github.com/todar/VBA-Materialize">Material Design</a></li>
-            <li><a class="green-text text-lighten-3" href="https://github.com/todar/VBA-Functions">Function Library</a></li>
+            <li><a class="light-blue-text" href="https://github.com/todar/VBA-Arrays">Array Object</a></li>
+            <li><a class="light-blue-text" href="https://github.com/todar/VBA-Distribution">Distribution</a></li>
+            <li><a class="light-blue-text" href="https://github.com/todar/VBA-Materialize">Material Design</a></li>
+            <li><a class="light-blue-text" href="https://github.com/todar/VBA-Functions">Function Library</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5>Connect</h5>
           
-            <a class="black-text" href="https://github.com/todar"><i style="font-size: 2.5rem; margin-right: 10px;" class="fab fa-github"></i></a>
-            <a class="orange-text" href="https://stackoverflow.com/story/roberttodar"><i style="font-size: 2.5rem" class="fab fa-stack-overflow"></i></a>
+            <a class="blue-text" href="https://github.com/todar"><i style="font-size: 2.5rem; margin-right: 10px;" class="fab fa-github"></i></a>
+            <a class="blue-text" href="https://stackoverflow.com/story/roberttodar"><i style="font-size: 2.5rem" class="fab fa-stack-overflow"></i></a>
           
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container grey-text text-lighten-1">
-        Designed using <a class="green-text text-lighten-2" href="http://materializecss.com">Materialize</a>
+        Designed using <a class="blue-text text-lighten-2" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
@@ -172,8 +189,23 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
+  <script src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
+
+  <script>
+
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems, {
+      scrollOffset: 105,
+      activeClass:'active',
+      getActiveElement: function(id) {
+
+      }
+    });
+  });
+  
+  </script>
 
   <script type="application/ld+json">
     {
@@ -184,11 +216,11 @@
   </script>
   
   <script>
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-           .register('/sw.js')
-           .then(function() { console.log("Service Worker Registered"); });
-}
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+              .register('/sw.js')
+              .then(function() { console.log("Service Worker Registered"); });
+    }
 </script>
 
 

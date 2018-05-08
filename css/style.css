@@ -8,8 +8,19 @@ p{
   font-size: 1.2rem;
 }
 #index-banner{
-  min-height: 585px;
+  min-height: 600px;
 }
 .main-sections{
   padding: 2.5rem 0;
+}
+.navbar-fixed{
+  min-height: 120px;
+}
+.tabs .tab a:focus, .tabs .tab a:active{
+  /* background-color: rgba(80, 219, 67, 0.075); */
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 2px solid #448aff;
+}
+.tabs .tab a {
+  transition: border-bottom .28s ease;
 }
