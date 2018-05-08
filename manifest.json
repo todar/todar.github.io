@@ -5,7 +5,7 @@
     {
       "src": "images/launcher-icon.png",
       "type": "image/png",
-      "sizes": "48x48"
+      "sizes": "144x144"
     }
   ],
   "display": "browser",
