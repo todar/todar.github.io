@@ -1,0 +1,16 @@
+{
+  "short_name": "Todar",
+  "name": "Robert Todar's Github",
+  "icons": [
+    {
+      "src": "images/launcher-icon.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    }
+  ],
+  "display": "browser",
+  "orientation": "portrait",
+  "theme_color": "#81c784",
+  "background_color": "#81c784",
+  "start_url": "index.html?launcher=true"
+}
