@@ -8,7 +8,7 @@
       "sizes": "144x144"
     }
   ],
-  "display": "browser",
+  "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#81c784",
   "background_color": "#81c784",
