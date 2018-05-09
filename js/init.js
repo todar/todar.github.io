@@ -1,8 +1,15 @@
-(function($){
-  $(function(){
+M.AutoInit();
 
-    $('.sidenav').sidenav();
+// Scrollspy
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.scrollspy');
+  var instances = M.ScrollSpy.init(elems, {
+    scrollOffset: 105
+  });
+});
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
-
+// Sidenavigation
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems, {});
+});
