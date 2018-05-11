@@ -22,5 +22,5 @@
   "orientation": "portrait",
   "theme_color": "#81c784",
   "background_color": "#81c784",
-  "start_url": "index.html?launcher=true"
+  "start_url": "?utm_source=homescreen"
 }

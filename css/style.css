@@ -16,3 +16,19 @@ p{
 .navbar-fixed{
   min-height: 120px;
 }
+.fa-4x{
+  font-size: 2.7rem; 
+  margin-right: 7px;
+}
+.footer-link, .fa-4x{
+  transition: .3s;
+}
+.fa-4x:hover, .footer-link:hover{
+  color: rgba(33, 149, 243, 0.479)!important;
+}
+
+@media only screen and (max-width: 601px) {
+  .main-sections{
+    padding: 0 0 .2rem;
+  }
+}
