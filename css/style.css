@@ -26,6 +26,9 @@ p{
 .fa-4x:hover, .footer-link:hover{
   color: rgba(33, 149, 243, 0.479)!important;
 }
+.sidenav span{
+  margin-left: 2rem;
+}
 
 @media only screen and (max-width: 601px) {
   .main-sections{
