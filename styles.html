@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Styles</title>
+
+    <style>
+      :root {
+        --green: rgb(2, 184, 117);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--green);
+      }
+
+      .container {
+        width: 80%;
+        height: inherit;
+        margin: auto;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      header {
+        width: 100%;
+        height: 75px;
+        box-shadow: 0 2px 8px rgba(20, 20, 20, 0.2);
+      }
+
+      header .container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        align-items: center;
+      }
+
+      header nav a {
+        padding: 8px 12px;
+        border-radius: 3px;
+        margin: 0;
+      }
+      header nav a:hover {
+        background-color: var(--green);
+        color: white;
+      }
+
+      .flex {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .grid {
+        display: grid;
+      }
+
+      .show-on-medium-and-up {
+        display: none;
+      }
+
+      /* Small devices (landscape phones, 576px and up) */
+      @media (min-width: 576px) {
+      }
+
+      /* Medium devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+        .hide-on-medium-and-up {
+          display: none;
+        }
+        .show-on-medium-and-up {
+          display: block;
+        }
+        .show-on-medium-and-up.flex {
+          display: flex;
+        }
+        .show-on-medium-and-up.grid {
+          display: grid;
+        }
+        header .container {
+          grid-template-columns: repeat(2, auto);
+          justify-content: space-between;
+        }
+      }
+
+      /* Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) {
+      }
+
+      /* Extra large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="hide-on-medium-and-up">M</div>
+        <div class="center">Logo</div>
+        <nav class="show-on-medium-and-up flex">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Services</a>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
